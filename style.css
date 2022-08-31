@@ -1,0 +1,234 @@
+/* Defult css */
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    display: inline-block;
+}
+
+.fix-width {
+    max-width: 1150px;
+    margin: auto;
+}
+/* header menu */
+
+.header{
+    background-color: #1abc9c;
+}
+.header-left{
+    width: 30%;
+}
+.header-left img{
+    width: 144px;
+}
+.header-right{
+    width: 70%;
+}
+.header-right ul{}
+.header-right ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-right ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 24px;
+    padding: 31px 24px;
+    border-right: 1px solid #fff;
+}
+.header-right ul li >a:hover{
+    background-color: #16a085;
+}
+/* Dropdown menu */
+.header-right ul li{
+    position: relative;
+}
+.header-right ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(1);
+ transform-origin:top center ; 
+}
+.header-right ul li:hover ul{
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-right ul li li{ 
+    display: block;
+}
+.header-right ul li li a {
+    background: #1abc9c;
+    width: 133px;
+    border-bottom: 1px solid #fff;
+}
+/* banner section */
+
+.banner{
+    background: url(https://learningsupportcentre.com/wp-content/uploads/2014/07/Bulb-banner.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px;
+}
+.banner h2 {
+    background-color:rgba(255, 99, 71,.4);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.banner p {
+    background-color: rgba(255, 99, 71,.4);
+    width: 156px;
+    margin: auto;
+    margin-top: 12px;
+    font-size: 20px;
+    padding: 10px 29px;
+    border-radius: 10px;
+}
+/* About section */
+.About {
+    background-color: rgb(236, 240, 241);
+    padding: 20px;
+}
+.About h2 {
+    font-size: 32px;
+    margin-bottom: 13px;
+}
+.About p {
+    width: 697px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;}
+/* service section */
+.service{
+    background-color: #ecf0f1;
+    padding: 50px;
+}
+.service-item {
+    width: 31.3%;
+    border: 1px solid #dddd;
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-sizing: border-box;
+}
+.service-item span {
+    font-size: 25px;
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+    padding: 17px;
+    margin-bottom: 10px;
+    border-radius: 23px 0 23px 0;
+}
+.service-item h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    border-bottom: 2px dotted green;
+}
+.service-item p {
+    font-size: 18px;
+}
+/* blog section */
+.blog{
+    padding: 20px;
+}
+.blog-left{
+    width: 70%;
+}
+.blog-item {
+    margin-bottom: 20px;
+}
+.blog-item p {
+    font-size: 19px;
+    font-weight: 500;
+}
+.blog-item img {
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.blog-right{
+    width: 25%;
+}
+.blog-right h2 {
+    font-size: 28px;
+    
+    display: inline-block;
+}
+.blog-right ul{
+    list-style: none;
+    border-top: 1px solid #dddd;
+}
+.blog-right ul li {
+    display: inline-block;
+    background: #f7f7f7;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+/* map section */
+.map{}
+.map-left{
+    width: 60%;
+}
+.map-right{
+    width: 35%;
+}
+
+/* footer section */
+.footer {
+    background-color: #34495e;
+    padding: 15px 0;
+}
+.footer-left{
+    width: 40%;
+}
+.footer-left p {
+    color: #ffff;
+    font-size: 20px;
+}
+.footer-right{
+    width: 60%;
+}
+.footer-right a {
+    color: #fff;
+    font-size: 31px;
+    padding: 0 26px;
+}
